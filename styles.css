@@ -1,0 +1,155 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --intro-email-signup-bg: hsl(217, 28%, 15%);
+  --main-bg: hsl(218, 28%, 13%);
+  --footer-bg: hsl(216, 53%, 9%);
+  --testiminial-bg: hsl(219, 30%, 18%);
+  --cyan-call-to-action: hsl(176, 68%, 64%);
+  --blue-call-to-action: hsl(198, 60%, 50%);
+  --error: hsl(0, 100%, 63%);
+  --white: hsl(0, 0%, 100%);
+}
+
+body {
+  font-size: 14px;
+  width: 1440px;
+  color: hsl(0, 0%, 100%);
+  width: 100vw;
+}
+
+/* nav-bar */
+header {
+  display: flex;
+
+  height: 64px;
+  justify-content: space-between;
+  background: var(--intro-email-signup-bg);
+}
+.logo img {
+  width: 100px;
+  height: auto;
+  margin: 1rem;
+}
+.links {
+  display: flex;
+  width: 100%;
+  justify-content: flex-end;
+}
+.link-container {
+  display: flex;
+  color: var(--white);
+  list-style: none;
+  margin-right: 2rem;
+}
+.link-container li {
+  margin: 1rem;
+}
+
+/*hero*/
+.main {
+  background: var(--intro-email-signup-bg);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+}
+.main img {
+  width: 450px;
+}
+
+.content {
+  margin: 2rem;
+  width: 35%;
+  justify-content: center;
+}
+.title {
+  margin: 1.5rem;
+}
+button {
+  align-items: center;
+  justify-content: center;
+  padding: 0.5rem 3rem;
+  border-radius: 45px;
+  margin-bottom: 2rem;
+  cursor: pointer;
+  background: var(--blue-call-to-action);
+  color: var(--white);
+}
+
+/* advantages */
+.advantages {
+  width: 100%;
+  background: var(--main-bg);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.boxes {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+.box {
+  width: 250px;
+  height: 250px;
+  background: transparent;
+  margin: 2rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.box h5 {
+  margin: 0.5rem;
+}
+.box span {
+  justify-content: center;
+  align-items: center;
+}
+
+/* productive */
+.productive {
+  display: flex;
+  width: 100%;
+  background: var(--main-bg);
+}
+.img {
+  width: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.img img {
+}
+.detail-box {
+  width: 50%;
+  border: 1px solid #222;
+  display: flex;
+  align-items: left;
+  justify-content: center;
+  flex-direction: column;
+}
+.boxy {
+  width: 60%;
+  align-items: left;
+}
+.boxy h1 {
+  margin: 1.5rem;
+}
+.boxy span {
+  margin: 2rem 0;
+}
+
+.boxy p {
+  margin-top: 3rem;
+}
+
+/* member */
+.people {
+  display: flex;
+}
