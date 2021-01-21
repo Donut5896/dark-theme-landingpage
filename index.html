@@ -41,9 +41,15 @@
     </p>
     
   </div>
-  <button>Get Started</button>
-</div>
-  
+  <button class="button">Get Started</button>
+
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
+    <path fill="hsl(218, 28%, 13%)" fill-opacity="1"
+      d="M0,128L30,144C60,160,120,192,180,202.7C240,213,300,203,360,165.3C420,128,480,64,540,42.7C600,21,660,43,720,80C780,117,840,171,900,170.7C960,171,1020,117,1080,128C1140,139,1200,213,1260,234.7C1320,256,1380,224,1410,208L1440,192L1440,320L1410,320C1380,320,1320,320,1260,320C1200,320,1140,320,1080,320C1020,320,960,320,900,320C840,320,780,320,720,320C660,320,600,320,540,320C480,320,420,320,360,320C300,320,240,320,180,320C120,320,60,320,30,320L0,320Z">
+    </path>
+  </svg>
+</div>  
+
 <!--advantage setion-->
 <div class="advantages">
   <div class="boxes">
@@ -71,7 +77,6 @@
       <span>Whether you're sharing holidays photos or work documents, Fylo has you covered allowing for all 
       file types to be securely stored and shared.</span>
     </div>
-  
   </div>
 </div>
  
@@ -87,22 +92,33 @@
       <p>Never let location be an issue when accessing your files.<br> Fylo has you covered for all of your file 
        storage needs.</p><br>
        <span>  Securely share files and folders with friends, family and colleagues for live collaboration. No email 
-        attachments required.</span><br>
-        <p><a href="#">See how Fylo works</a></p>
+        attachments required.</span>
+
+        <div class="arrow">
+           <p><a href="#">See how Fylo works</a></p>
+           <img src="./images/icon-arrow.svg" />
+        </div>
+       
       </div>
     </div>
     
   </div>
 
-  <!--member-->
+  <!--testimonial-->
+  <section class="testimonial">
+
+ 
   <div class="people">
     <div class="person">
       <p> Fylo has improved our team productivity by an order of magnitude. Since making the switch our team has 
        become a well-oiled collaboration machine.</p>
        <div class="detail">
          <img src="./images/profile-1.jpg">
-         <h6>Satish Patel</h6>
-         <span> Founder & CEO, Huddle</span>
+         <div class="image">
+            <h6>Satish Patel</h6>
+           <span> Founder & CEO, Huddle</span>
+         </div>
+        
        </div>
        
     </div>
@@ -111,61 +127,77 @@
         become a well-oiled collaboration machine.</p>
         <div class="detail">
            <img src="./images/profile-2.jpg">
-           <h6>Bruce McKenzie</h6>
-           <span> Founder & CEO, Huddle</span>
+           <div class="image">
+             <h6>Bruce McKenzie</h6>
+             <span> Founder & CEO, Huddle</span>
+           </div>
+           
         </div>
     </div>
 
       <div class="person">
         <p> Fylo has improved our team productivity by an order of magnitude. Since making the switch our team has
           become a well-oiled collaboration machine.</p>
-        <div class="profile"> 
+        <div class="detail"> 
           <img src="./images/profile-3.jpg">  
           <div class="detail">
-            <span> Founder & CEO, Huddle</span>
-            <h6>Iva Boyd</h6>
+            <div class="image">
+              <span> Founder & CEO, Huddle</span>
+              <h6>Iva Boyd</h6>
+            </div>
+            
           </div>
         </div>
       </div>
-  </div>
+  </div> 
+</section>
   <!--get early access-->
   <div class="access">
-    <h4> Get early access today</h4>
-    <p>It only takes a minute to sign up and our free starter tier is extremely generous. If you have any
-    questions, our support team would be happy to help you.</p>
-    <input type="text" />
-    <button>Get Started For Free</button>
+    <div class="sign-up">
+      <h4> Get early access today</h4>
+      <p>It only takes a minute to sign up and our free starter tier is extremely generous. If you have any
+      questions, our support team would be happy to help you.</p>
+      <input type="text" />
+      <button class="free button">Get Started For Free</button>
+    </div>
+   
   </div>
 
   <!--footer-->
-  <footer>
-    <div class="box1">
+  <div class="footer">
       <img src="./images/logo.svg" alt="logo">
-      <span> Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et 
-      dolore magna aliqua</span>
-    </div>
-    <div class="box2">
-      <i class="fa fa-phone">+1-543-123-4567</i>
-      <i class="fa fa-envelope">example@fylo.com</i>
-    </div>
-    <div class="box3">
-      <li>About Us</li>
-      <li>Jobs</li>
-      <li>Press</li>
-      <li> Blog</li>
-    </div>
-    <div class="box4">
-      <li>Contact Us</li>
-      <li>Terms</li>
-      <li>Privacy</li>
-    </div>
-    <div class="box5">
-     <i class="fa fa-facebook" aria-hidden="true"></i>
-      <i class="fa fa-instagram" aria-hidden="true"></i>
-      <i class="fa fa-twitter" aria-hidden="true"></i>
-    </div>
-  </footer>
 
+      <section class="section">
+        <div class="box1">
+          <i class="fa fa-map-marker" aria-hidden="true"></i>
+          <span> Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et 
+          dolore magna aliqua</span>
+        </div>
+
+        <div class="box2">
+          <p><i class="fa fa-phone"></i>+1-543-123-4567</p>
+          <p><i class="fa fa-envelope"></i>example@fylo.com</p>
+        </div>
+        <div class="box3">
+          <li>About Us</li>
+          <li>Jobs</li>
+          <li>Press</li>
+          <li> Blog</li>
+        </div>
+        <div class="box4">
+          <li>Contact Us</li>
+          <li>Terms</li>
+          <li>Privacy</li>
+        </div>
+        <div class="box5">
+          <i class="fa fa-facebook " aria-hidden="true"></i>
+          <i class="fa fa-instagram" aria-hidden="true"></i>
+          <i class="fa fa-twitter" aria-hidden="true"></i>
+        </div>
+      </section>
+</div>
+
+  
 
 <footer>
   <p class="attribution">

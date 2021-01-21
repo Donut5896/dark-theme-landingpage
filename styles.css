@@ -16,7 +16,7 @@
 }
 
 body {
-  font-size: 14px;
+  font-size: 16px;
   width: 1440px;
   color: hsl(0, 0%, 100%);
   width: 100vw;
@@ -25,20 +25,21 @@ body {
 /* nav-bar */
 header {
   display: flex;
-
-  height: 64px;
-  justify-content: space-between;
+  height: 80px;
+  justify-content: space-around;
   background: var(--intro-email-signup-bg);
+  align-items: center;
 }
 .logo img {
   width: 100px;
   height: auto;
-  margin: 1rem;
+  margin: 2rem;
 }
 .links {
   display: flex;
   width: 100%;
   justify-content: flex-end;
+  margin: 2rem;
 }
 .link-container {
   display: flex;
@@ -47,7 +48,7 @@ header {
   margin-right: 2rem;
 }
 .link-container li {
-  margin: 1rem;
+  margin: 2rem;
 }
 
 /*hero*/
@@ -71,7 +72,7 @@ header {
 .title {
   margin: 1.5rem;
 }
-button {
+.button {
   align-items: center;
   justify-content: center;
   padding: 0.5rem 3rem;
@@ -125,10 +126,10 @@ button {
   justify-content: center;
 }
 .img img {
+  width: 50%;
 }
 .detail-box {
   width: 50%;
-  border: 1px solid #222;
   display: flex;
   align-items: left;
   justify-content: center;
@@ -148,8 +149,200 @@ button {
 .boxy p {
   margin-top: 3rem;
 }
+.boxy a {
+  list-style: none;
+  color: var(--cyan-call-to-action);
+}
+.arrow {
+  display: flex;
+  align-items: baseline;
+  justify-content: flex-end;
+}
+.arrow img {
+  width: 30px;
+  height: 30px;
+}
 
 /* member */
-.people {
+.testimonial {
+  background: var(--main-bg);
+}
+.testimonial .people {
   display: flex;
+  justify-content: center;
+  padding: 10rem;
+}
+.people .person {
+  max-width: calc(35% - 80px);
+  padding: 20px;
+  margin: 20px;
+  background: var(--testiminial-bg);
+}
+.person p {
+  margin-bottom: 3rem;
+}
+.detail {
+  display: flex;
+  padding: 10px;
+  margin-bottom: 0;
+  left: 0;
+}
+.detail img {
+  border-radius: 50%;
+  width: 20%;
+}
+.image {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+/* sig up section */
+.access {
+  background: linear-gradient(
+    0deg,
+    hsl(217, 28%, 15%) 50%,
+    hsl(218, 28%, 13%) 50%
+  );
+  background-position: top, bottom;
+  background-repeat: no-repeat, repeat;
+  width: 100%;
+  height: 300px;
+  align-items: center;
+  align-items: center;
+  display: flex;
+  justify-content: center;
+}
+.sign-up {
+  width: 50%;
+  padding: 2rem;
+  justify-content: space-around;
+  align-items: center;
+  background: var(--testiminial-bg);
+}
+.sign-up h4 {
+  font-size: 32px;
+  display: flex;
+  justify-content: center;
+}
+.sign-up p {
+  padding: 1rem;
+}
+.sign-up input {
+  border-radius: 30px;
+  padding: 0.5rem 8rem;
+}
+.sign-up .free {
+  margin-left: 10px;
+}
+/* footer */
+.footer {
+  position: relative;
+  padding: 5rem;
+  background: var(--intro-email-signup-bg);
+  display: block;
+}
+.section {
+  display: flex;
+  width: 100%;
+  justify-content: space-around;
+  padding: 3rem;
+}
+.box1 {
+  display: block;
+  width: 30%;
+  justify-content: space-between;
+}
+
+.box1 img {
+  margin: 2rem;
+}
+.box1 .fa-map-marker {
+  font-size: 24px;
+  margin: 10px;
+  justify-content: flex-start;
+}
+
+.box2 {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.box2 .fa-phone,
+.box2 .fa-envelope {
+  margin: 0 1rem;
+}
+.box2 p {
+  margin: 0 2rem;
+}
+.box3 li,
+.box4 li {
+  padding: 0 1rem;
+  margin: 0.5rem 0;
+}
+.box5 {
+  width: 150px;
+  display: flex;
+  justify-content: space-between;
+}
+.box5 .fa-facebook,
+.box5 .fa-instagram,
+.box5 .fa-twitter {
+  border-radius: 50%;
+  border: 1px solid #fff;
+  box-shadow: 0px 0px 2px grey;
+  padding: 0.5em 0.6em;
+  height: 30px;
+}
+
+@media only screen and (max-width: 900px) {
+  .people .person {
+    max-width: calc(100% - 70px);
+  }
+  .testimonial .people {
+    flex-direction: column;
+    align-items: center;
+  }
+  .sign-up input {
+    padding: 0.5rem 3rem;
+  }
+  .sign-up .free {
+    margin: 20px;
+  }
+  .section {
+    flex-direction: column;
+  }
+  .box2 .fa-phone,
+  .box2 .fa-envelope {
+    margin: 0;
+  }
+  .box2 p {
+    margin: 0;
+  }
+  .box2 {
+    margin: 1rem 0;
+    justify-content: flex-start;
+    align-items: flex-start;
+  }
+  .box2,
+  .box4,
+  .box3,
+  .box5 {
+    margin: 1rem 0;
+  }
+  .box1 {
+    width: 50%;
+  }
+  .productive {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .detail-box {
+    align-items: center;
+  }
+  .boxes {
+    grid-template-columns: 1fr;
+  }
 }
